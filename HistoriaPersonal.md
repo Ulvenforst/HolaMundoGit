@@ -13,3 +13,8 @@ Líneas básicas de comandos en git:
   - `--soft` se vuelve a la versión anterior pero se conserva el *staging*. (El entorno de Git nor retrocede)
 - `git diff` muestra las diferencias del archivo actual con lo que haya en *staging*.
 - `git log --stat` muestra los cambios específicos de *bytes* de los registros en `log`.
+
+Esta suele ser la forma más común de moverse entre versiones del archivo, puesto que `reset` elimina los `log`, a diferencia de `checkout`:
+- `git checkout <etiqueta del archivo antiguo que quiero visualizar> <nombre del archivo>` esto me permite visualizar un archivo dado en un estado antiguo. Nótese que esto no cambiará directamente el archivo a menos que se haga un `commit`, pues el propósito es visualizar un estado anterior. Para revertir los cambios podemos hacer uso de:
+  - `git checkout master <nombre del archivo>`.
+  
