@@ -32,3 +32,6 @@ Una vez hayamos hecho uso de `git add`, podemos omitir el paso de `git add` y `g
 
 - Con `git branch <nombre de la nueva rama>` podemos crear una rama nueva.
 - Para movernos de ramas `git checkout <nombre de la rama>`.
+
+
+Este es un texto de prueba para las ramas 🪑.
