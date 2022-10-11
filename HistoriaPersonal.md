@@ -31,3 +31,4 @@ Esta suele ser la forma más común de moverse entre versiones del archivo, pues
 Una vez hayamos hecho uso de `git add`, podemos omitir el paso de `git add` y `git commit` haciendo uso de `git commit -am`
 
 - Con `git branch <nombre de la nueva rama>` podemos crear una rama nueva.
+- Para movernos de ramas `git checkout <nombre de la rama>`.
