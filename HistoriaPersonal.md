@@ -27,3 +27,7 @@ Esta suele ser la forma más común de moverse entre versiones del archivo, pues
 - `git fetch`: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
 - `git merge`: También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
 - `git pull`: Básicamente, git fetch y git merge al mismo tiempo.
+
+Una vez hayamos hecho uso de `git add`, podemos omitir el paso de `git add` y `git commit` haciendo uso de `git commit -am`
+
+- Con `git branch <nombre de la nueva rama>` podemos crear una rama nueva.
