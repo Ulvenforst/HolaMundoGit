@@ -40,4 +40,10 @@ Para añadir un espacio remoto hacemos uso de `git remote add origin <dirección
 - con `git remote -v` vemos los enlaces de los origenes.
 - Para hacer los envíos a github `git push origin master`
 
-Añadido para enviar a GitHub
+Note que en la versión actual de GitHub la rama principal es *main* por ende debemos crear dicha rama y desde ahí hacer el push.
+Una vez creamos la rama y estamos conectados a `remote` debemos hacer un `pull` (`clone` y `merge`) antes de hacer nuestro `push` puesto que en un inicio son archivos diferentes. 
+- `git pull origin main`.
+Notese que se puede tratar de "historias diferentes" por lo que hacemos uso de:
+- `git pull origin main --allow-unrelated-histories`
+
+Una vez hecho el pull, ya podemos hacer un `push` desde main, y es eso lo que veremos en GitHub
