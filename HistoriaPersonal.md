@@ -36,3 +36,5 @@ Una vez hayamos hecho uso de `git add`, podemos omitir el paso de `git add` y `g
 
 ## GitHub
 Para añadir un espacio remoto hacemos uso de `git remote add origin <dirección https>`
+- con `git remote` vemos los origenes.
+- con `git remote -v` vemos los enlaces de los origenes.
