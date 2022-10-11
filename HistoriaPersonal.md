@@ -39,3 +39,5 @@ Para añadir un espacio remoto hacemos uso de `git remote add origin <dirección
 - con `git remote` vemos los origenes.
 - con `git remote -v` vemos los enlaces de los origenes.
 - Para hacer los envíos a github `git push origin master`
+
+Añadido para enviar a GitHub
