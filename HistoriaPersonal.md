@@ -54,26 +54,26 @@ Notese que se puede tratar de "historias diferentes" por lo que hacemos uso de:
 Una vez hecho el pull, ya podemos hacer un `push` desde main, y es eso lo que veremos en GitHub
 
 ## Creación de llaves públicas y privadas
-Para crear una llave privada usamos `ssh-keygen -t rsa -b 4096 -C "tu@email.com"`
+* Para crear una llave privada usamos `ssh-keygen -t rsa -b 4096 -C "tu@email.com"`
 
-Encender el “servidor” de llaves SSH de tu computadora:
+* Encender el “servidor” de llaves SSH de tu computadora:
 `eval $(ssh-agent -s)` Esto desde git Bash
 
-Para añadir tu llave SSH a este “servidor” usamos `ssh-add ruta-donde-guardaste-tu-llave-privada`
+* Para añadir tu llave SSH a este “servidor” usamos `ssh-add ruta-donde-guardaste-tu-llave-privada`
 
-Para cambiar la url de remote: `git remote set-url origin url-ssh-del-repositorio-en-github`
+* Para cambiar la url de remote: `git remote set-url origin url-ssh-del-repositorio-en-github`
 
-Una vez tenemos todo configurado, hacemos un `git pull` para terminar de verificar datos con el servidor. (aceptamos todo lo que nos indique)
+* Una vez tenemos todo configurado, hacemos un `git pull` para terminar de verificar datos con el servidor. (aceptamos todo lo que nos indique)
 
 **Es una buena práctica hacer un `git pull` antes de cualquier commit**
 
 ## Tags y versiones en Git y GitHub
-Si queremos ver de forma gráfica los logs del historial podemos usar `--graph` al log. Lo más común es usar `git log --all --graph`, o `git log --all --graph --decorate --online` (Este muestra todo más comprimido).
+* Si queremos ver de forma gráfica los logs del historial podemos usar `--graph` al log. Lo más común es usar `git log --all --graph`, o `git log --all --graph --decorate --online` (Este muestra todo más comprimido).
 
 * Para crear aliases usamos `alias nombre_del_alias="comandos que queremos usar en el alias"`.
 
-Para crear *tags*, los cuales describan mejor los estados de nuestros commits, hacemos uso de `git tag -a nombre-del-tag id-del-commit`, -a se refiere a *add*
+* Para crear *tags*, los cuales describan mejor los estados de nuestros commits, hacemos uso de `git tag -a nombre-del-tag id-del-commit`, -a se refiere a *add*
 
-Listar los tags de nuestro repositorio local: `git tag` o `git show-ref --tags`, el segunda muestra su respectiva información detallada.
+* Listar los tags de nuestro repositorio local: `git tag` o `git show-ref --tags`, el segunda muestra su respectiva información detallada.
 
-Para subir nuestros tags a git usamos `git push origin --tags`
+* Para subir nuestros tags a git usamos `git push origin --tags`
