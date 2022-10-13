@@ -36,6 +36,8 @@ Una vez hayamos hecho uso de `git add`, podemos omitir el paso de `git add` y `g
 - Con `git branch <nombre de la nueva rama>` podemos crear una rama nueva.
 - Para movernos de ramas `git checkout <nombre de la rama>`.
 - `git merge <nombre de la rama a traer> -m "Descripción"` De esta manera se unen las ramas.
+- Para eliminar una rama locar `git branch --delete <rama>`
+  - Si queremos forzar podemos usar `git branch -D <rama>`, D es sinónimo de `--delete --force`
 
 ## GitHub
 Para añadir un espacio remoto hacemos uso de `git remote add origin <dirección https>`
@@ -64,3 +66,8 @@ Para cambiar la url de remote: `git remote set-url origin url-ssh-del-repositori
 Una vez tenemos todo configurado, hacemos un `git pull` para terminar de verificar datos con el servidor. (aceptamos todo lo que nos indique)
 
 **Es una buena práctica hacer un `git pull` antes de cualquier commit**
+
+## Tags y versiones en Git y GitHub
+Si queremos ver de forma gráfica los logs del historial podemos usar `--graph` al log. Lo más común es usar `git log --all --graph`, o `git log --all --graph --decorate --online` (Este muestra todo más comprimido).
+
+* Para crear aliases usamos `alias nombre_del_alias="comandos que queremos usar en el alias"`.
