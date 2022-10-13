@@ -71,3 +71,9 @@ Una vez tenemos todo configurado, hacemos un `git pull` para terminar de verific
 Si queremos ver de forma gráfica los logs del historial podemos usar `--graph` al log. Lo más común es usar `git log --all --graph`, o `git log --all --graph --decorate --online` (Este muestra todo más comprimido).
 
 * Para crear aliases usamos `alias nombre_del_alias="comandos que queremos usar en el alias"`.
+
+Para crear *tags*, los cuales describan mejor los estados de nuestros commits, hacemos uso de `git tag -a nombre-del-tag id-del-commit`, -a se refiere a *add*
+
+Listar los tags de nuestro repositorio local: `git tag` o `git show-ref --tags`, el segunda muestra su respectiva información detallada.
+
+Para subir nuestros tags a git usamos `git push origin --tags`
