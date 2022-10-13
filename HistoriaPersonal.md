@@ -1,6 +1,9 @@
 # Hola Mundo en Git
 
 Líneas básicas de comandos en git:
+- `git init` Se inicializa git.
+- `git config -l` se muestran las configuraciones.
+  - `git config --global user.name ""` se puede visualizar o cambiar una configuración global específica.
 - `git add <file>` empieza a vigilar el archivo dado.
 - `git status` muestra el estado actual de la carpeta.
 - `git commit -m "Comentario"` hace envío de lo que haya en `add` (*staging*)
@@ -38,7 +41,7 @@ Una vez hayamos hecho uso de `git add`, podemos omitir el paso de `git add` y `g
 Para añadir un espacio remoto hacemos uso de `git remote add origin <dirección https>`
 - con `git remote` vemos los origenes.
 - con `git remote -v` vemos los enlaces de los origenes.
-- Para hacer los envíos a github `git push origin master`
+- Para hacer los envíos a github `git push origin main`
 
 Note que en la versión actual de GitHub la rama principal es *main* por ende debemos crear dicha rama y desde ahí hacer el push.
 Una vez creamos la rama y estamos conectados a `remote` debemos hacer un `pull` (`fetch` y `merge`) antes de hacer nuestro `push` puesto que en un inicio son archivos diferentes. 
@@ -47,3 +50,15 @@ Notese que se puede tratar de "historias diferentes" por lo que hacemos uso de:
 - `git pull origin main --allow-unrelated-histories`
 
 Una vez hecho el pull, ya podemos hacer un `push` desde main, y es eso lo que veremos en GitHub
+
+## Creación de llaves públicas y privadas
+Para crear una llave privada usamos `ssh-keygen -t rsa -b 4096 -C "tu@email.com"`
+
+Encender el “servidor” de llaves SSH de tu computadora:
+`eval $(ssh-agent -s)` Esto desde git Bash
+
+Para añadir tu llave SSH a este “servidor” usamos `ssh-add ruta-donde-guardaste-tu-llave-privada`
+
+Para cambiar la url de remote: `git remote set-url origin url-ssh-del-repositorio-en-github`
+
+Una vez tenemos todo configurado, hacemos un `git pull` para terminar de verificar datos con el servidor. (aceptamos todo lo que nos indique)
