@@ -47,18 +47,3 @@ Notese que se puede tratar de "historias diferentes" por lo que hacemos uso de:
 - `git pull origin main --allow-unrelated-histories`
 
 Una vez hecho el pull, ya podemos hacer un `push` desde main, y es eso lo que veremos en GitHub
-
-Prueba de mermaid:
-
-<div style="text-align:center">
-
-```mermaid 
-classDiagram
-
-class ClasePadre {
-  - id : int
-  + llamar()
-}
-```
-
-</div>
