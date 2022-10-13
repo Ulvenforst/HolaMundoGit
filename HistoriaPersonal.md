@@ -62,3 +62,5 @@ Para añadir tu llave SSH a este “servidor” usamos `ssh-add ruta-donde-guard
 Para cambiar la url de remote: `git remote set-url origin url-ssh-del-repositorio-en-github`
 
 Una vez tenemos todo configurado, hacemos un `git pull` para terminar de verificar datos con el servidor. (aceptamos todo lo que nos indique)
+
+**Es una buena práctica hacer un `git pull` antes de cualquier commit**
